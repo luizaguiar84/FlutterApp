@@ -1,12 +1,25 @@
-import 'package:bytebank/screens/lista_transferencias.dart';
+import 'package:bytebank/screens/transferencias/lista.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(ByteBankApp());
+void main() => runApp(Dashboard());
+
+class Dashboard extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+            title: Text(
+          'Dashboard',
+        )),
+      ),
+    );
+  }
+}
 
 class ByteBankApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       theme: ThemeData(
           primaryColor: Colors.green[900],
